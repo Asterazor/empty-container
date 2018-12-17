@@ -1,0 +1,10 @@
+Tests:
+  - image: python:3.6
+    commands:
+      - pytest
+    when:
+      branch: '*'
+      event: pull_request
+
+BuildInstance:
+    type: "hello"
