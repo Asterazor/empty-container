@@ -1,3 +1,6 @@
-FROM alpine:3.5
+FROM python:3.6
 
-CMD echo 'gg'
+WORKDIR /leonids_test
+ADD ./* ./
+RUN pip install -r requirements.txt
+CMD pytest

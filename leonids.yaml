@@ -5,6 +5,3 @@ Tests:
     when:
       branch: '*'
       event: pull_request
-
-BuildInstance:
-    type: "hello"
